@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#E6FFEB">
+
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="2"
+        android:gravity="center">
+
+        <!-- ImageButton for Expenses -->
+        <ImageButton
+            android:id="@+id/button_expenses"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_expenses"
+            android:contentDescription="Expenses"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp"/>
+
+        <!-- ImageButton for Income -->
+        <ImageButton
+            android:id="@+id/button_income"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_income"
+            android:contentDescription="Income"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp"/>
+
+        <!-- ImageButton for Report -->
+        <ImageButton
+            android:id="@+id/button_report"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_report"
+            android:contentDescription="Report"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp"/>
+
+        <!-- ImageButton for Profile -->
+        <ImageButton
+            android:id="@+id/button_profile"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_profile"
+            android:contentDescription="Profile"
+            android:scaleType="centerInside"
+            android:layout_margin="8dp"/>
+
+    </GridLayout>
+</LinearLayout>

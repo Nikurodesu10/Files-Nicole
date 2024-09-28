@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6FFEB"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Back"/>
+
+    <!-- Edit Button -->
+    <ImageButton
+        android:id="@+id/button_edit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_edit"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Edit"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/text_expenses_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expenses"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <!-- Cultivation Section -->
+
+    <TextView
+        android:id="@+id/text_cultivation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_expenses_title"
+        android:layout_marginTop="117dp"
+        android:text="Cultivation"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_cultivation_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Labor - 20,000\n• Materials/Supply - 35,000"
+        android:textSize="16sp"
+        android:layout_below="@id/text_cultivation"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"/>
+
+    <!-- Harvest Section -->
+    <TextView
+        android:id="@+id/text_harvest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harvest"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/text_cultivation_details"
+        android:layout_marginTop="24dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/text_harvest_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• Labor - 30,000\n• Trucking - 52,500"
+        android:textSize="16sp"
+        android:layout_below="@id/text_harvest"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"/>
+
+    <!-- Total -->
+    <TextView
+        android:id="@+id/text_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total: 137,500"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#4CAF50"/>
+</RelativeLayout>

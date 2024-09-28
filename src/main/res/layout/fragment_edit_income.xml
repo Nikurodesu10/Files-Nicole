@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6FFEB"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="8dp"
+        android:src="@drawable/ic_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Back"/>
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/text_income_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Income"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"/>
+
+    <!-- Date EditText -->
+    <EditText
+        android:id="@+id/edit_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_income_title"
+        android:layout_marginTop="32dp"
+        android:hint="Date :"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <!-- Sale of Sugar EditText -->
+    <EditText
+        android:id="@+id/edit_sale_sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_date"
+        android:layout_marginTop="16dp"
+        android:hint="Sale of sugar -"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <!-- Molasses EditText -->
+    <EditText
+        android:id="@+id/edit_molasses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_sale_sugar"
+        android:layout_marginTop="16dp"
+        android:hint="Molasses -"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <!-- Tracking Incentives EditText -->
+    <EditText
+        android:id="@+id/edit_tracking_incentives"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_molasses"
+        android:layout_marginTop="16dp"
+        android:hint="Tracking Incentives -"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:background="#4CAF50"
+        android:layout_below="@id/edit_tracking_incentives"
+        android:layout_marginTop="32dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
